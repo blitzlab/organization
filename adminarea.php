@@ -16,7 +16,7 @@
             <h4>Create Staff</h4>
         </div>
     </a>
-    <a href="http://localhost/org/stafflist.php?next=1">
+    <a href="http://localhost/org/stafflist.php">
         <div class="card">
             <i class="fas fa-clone"></i>
             <h4>See Staff</h4>

@@ -115,7 +115,17 @@ form input[type=submit]{
     border-radius: 5px;
     border-style: none;
 }
+table{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+th{
+    padding: 0 20px;
+}
 .main-footer{
     font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
