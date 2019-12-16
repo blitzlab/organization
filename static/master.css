@@ -12,29 +12,20 @@ body{
     font-family: 'Courier New', Courier, monospace;
     /* height: 15vh; */
     font-weight: bold;
-    display:flex;
+    /* display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     border-bottom: 2px solid rgb(116, 10, 10);
     overflow: hidden;
 }
 
-.nav-links{
-    display: flex;
-    /* width:60%; */
-    align-items: center;
-    /* height: 100%; */
-    list-style: none;
-    justify-content: space-between;
-}
-
-.nav-links a{
+.nav-item a{
     text-decoration: none;
     color: rgb(116, 10, 10);
-    padding:  100% 25px;
+    padding:  100px 25px;
     
 }
-.nav-links a:hover{
+.nav-item a:hover{
     background: rgb(116, 10, 10);
     color: #dddddd;
 }
@@ -51,12 +42,12 @@ body{
     justify-content: center;
     align-items: center;
 }
-.admin-dashboard,
-.request-header{
+.admin-dashboard{
     display: flex;
     justify-content:center;
     align-items:center;
 }
+
 .admin-dashboard a{
     position: absolute;
     right: 40px;
@@ -74,10 +65,10 @@ body{
 
 .row{
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 40px;
-    margin:20px 60px 0px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:100px;
 }
 .row a{
     text-decoration:none;
@@ -85,6 +76,7 @@ body{
 }
 .card{
     padding:30px 0;
+    width: 300px;
     border-radius: 10px;
     background: #ddd;
     box-shadow:-2px -2px 4px #555;
@@ -122,19 +114,29 @@ table{
     align-items: center;
     text-align: center;
 }
+table a{
+    color: white;
+}
 
 th{
     padding: 0 20px;
 }
+
+.dept-body{
+    width:100%;
+    text-align: center;
+}
+.dept-body a{
+    text-decoration: none;
+    padding: 0px 100px;
+}
+
 .main-footer{
     font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
     border-top: 2px solid rgb(116, 10, 10);
     display: flex;
     justify-content: space-around;
-    position: fixed;
-    background: #0f8b24;
-    height: 10vh;
-    width: 100%;
-    bottom: 0px;
+    align-items: center;
+    background: #444644;
 }

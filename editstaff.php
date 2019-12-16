@@ -38,5 +38,6 @@
             
         </form>
     </section>");
+    mysqli_close($db);
 ?>
 <?php include('include/footer.php'); ?>

@@ -20,7 +20,7 @@
             $sql_query = "INSERT INTO department (name) VALUES ('$department')";
             mysqli_query($db, $sql_query);
             echo("<script>alert('Department created successfully');</script>");
-            header("location: http://localhost");
+            header("location: index.php");
         }
     }else{
         echo("
@@ -38,6 +38,7 @@
             </section>
         ");
     }
+    mysqli_close($db);
 ?>
 
 <?php include('include/footer.php'); ?>

@@ -25,7 +25,7 @@
                 $sql_query = "INSERT INTO staff (name, email, age, date_employed, department) VALUES ('$staffname', '$email', '$age', '$date', '$department')";
                 mysqli_query($db, $sql_query);
                 echo("<script>alert('Staff created successfully');</script>");
-                header("location: http://localhost");
+                header("location: index.php");
             
             // }
         }else{
@@ -73,6 +73,7 @@
         </form>
     </section>");
     }
+    mysqli_close($db);
 
 ?>
 <?php include('include/footer.php'); ?>
